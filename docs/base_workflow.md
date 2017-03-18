@@ -53,7 +53,10 @@
 6. 用户CMCC接收到`Pull Request`请求后，对代码评审，确认无误后`Merge`到主仓库 *(http://github.com/CMCC/dpi_kpi)* 中，此时主仓库内规范的版本也同步到状态`2`。
 7. 此时，用户BMCC的Github上的仓库 *(http://github.com/BMCC/dpi_kpi)* 及本地仓库中的指标规范版本仍为`1`,为了与CMCC的主DPI_KPI指标仓库中的指标规范保持一致，用户BMCC对自己发起`Pull Request`，合并主仓库 *http://github.com/CMCC/dpi_kpi* 的规范变动。合并成功后，用户B的Github仓库内规范的版本也同步到状态`2`。
 8. 用户BMCC在Github上`Pull Request` & `Merge`成功后，在本地PC上的本地仓库及工作空间中拉取`pull`最新的指标规范(同步到状态`2`)，然后进一步在本地工作空间内做本地编辑，此时用户B的本地工作空间内的规范的版本已到状态`3`。
-9. 用户BMCC本地编辑结束后，向本地仓库（Local .git）提交`commit`修改结果，仓库内规范的初始版本为状态`3`。
-10. 用户BMCC进一步向自己的Github上的仓库 *(http://github.com/BMCC/dpi_kpi)* 提交修改结果，仓库内规范的初始版本为状态`3`。
+9. 用户BMCC本地编辑结束后，向本地仓库（Local .git）提交`commit`修改结果，仓库内规范的版本为状态`3`。
+10. 用户BMCC进一步向自己的Github上的仓库 *(http://github.com/BMCC/dpi_kpi)* 提交修改结果，仓库内规范的版本为状态`3`。
 11. 此后，BMCC用户向CMCC用户的DPI_KPI仓库 *(http://github.com/CMCC/dpi_kpi)* 发起`Pull Request`请求，请求CMCC用户采纳自己对指标的修改，将修改后的指标合并到主仓库。
 12. ...
+
+## Github工作流原理及介绍
+- 
