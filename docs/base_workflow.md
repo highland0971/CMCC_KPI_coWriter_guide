@@ -44,3 +44,11 @@
 **基本工作流程** 
  
 ![基本工作流程](../imgs/image_workflow_pull_merge.png)
+0. 用户CMCC在Github上创建DPI_KPI指标仓库 *(http://github.com/CMCC/dpi_kpi)* ，仓库内规范的初始版本为`1`。
+1. 用户TJMCC、BMCC在Github上`fork`用户CMCC的DPI_KPI指标仓库到自己的Github账户下 *(http://github.com/TJMCC/dpi_kpi)*，仓库内规范的初始版本为`1`。
+2. 用户TJMCC、BMCC将自己Github下的DPI_KPI指标仓库 *(http://github.com/TJMCC/dpi_kpi)* 克隆`clone`到本地PC机上，建立本地仓库 *（Local .git目录）*，仓库内规范的初始版本为`1`。
+3. 用户TJMCC在本地的工作空间中进行指标规范修改，完成后提交`commit`到自己的本地仓库中 *（Local .git目录）*，仓库内规范的版本为`2`。
+4. 在完成本地仓库提交后，用户TJMCC进一步将本地仓库中的 *（Local .git目录）*指标仓库推送`push`到Github网站中自己的DPI_KPI指标仓库 *(http://github.com/TJMCC/dpi_kpi)* 中，仓库内规范的版本同步到`2`。
+5. 用户TJMCC将代码推送到Github上自己的仓库中后，向CMCC用户的DPI_KPI仓库 *(http://github.com/CMCC/dpi_kpi)* 发起`Pull Request`请求，请求CMCC用户采纳自己对指标的修改，将修改后的指标合并到主仓库  *(http://github.com/CMCC/dpi_kpi)* 中。
+6. 用户CMCC接收到`Pull Request`请求后，对代码评审，确认无误后`Merge`到主仓库 *(http://github.com/CMCC/dpi_kpi)* 中，此时主仓库内规范的版本也同步到`2`。
+7. 此时，用户BMCC的Github上的仓库及本地仓库中的
