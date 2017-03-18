@@ -20,6 +20,6 @@
 3. [基于XML/XSD的表格规范编写简介](docs/xml_datagrid_writing.md)
 4. 指标工作组目录及文件规范
 5. 工具及手段
- 1. Git && GitTortoise
- 2. Typora
- 3. NotePad++ && Excel
+    1. Git && GitTortoise
+    2. Typora
+    3. NotePad++ && Excel
