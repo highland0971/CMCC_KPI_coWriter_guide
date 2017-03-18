@@ -10,15 +10,15 @@
 ## 目录 ##
 
 1. 基本在线协作流程
- 1. 基本指标修订协作流程
- 2. 主项目创建
- 3. 主项目复制及本地仓库创建
- 4. 本地仓库修订提交
- 5. 订阅、讨论
+   1. 基本指标修订协作流程
+   2. 主项目创建
+   3. 主项目复制及本地仓库创建
+   4. 本地仓库修订提交
+   5. 订阅、讨论
 2. [基于Markdown的文档规范编写简介](/docs/Markdown_writing.md)
 3. [基于XML/XSD的表格规范编写简介](docs/xml_datagrid_writing.md)
 4. 指标工作组目录及文件规范
 5. 工具及手段
- - Git && GitTortoise
- - Typora
- - NotePad++ && Excel
+- Git && GitTortoise
+- Typora
+- NotePad++ && Excel
