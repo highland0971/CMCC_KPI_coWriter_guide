@@ -91,4 +91,9 @@ VoLTE语音始呼接通率 = (UE1：VoLTE语音始呼接通次数+UE1：VoLTE语
 
 - [献给写作者的 Markdown 新手指南](http://www.jianshu.com/p/q81RER/)
 - [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/)
-- ​
+- [安利一下Typora：极致简洁的markdown编辑器](http://www.jianshu.com/p/5256ecc06eec)
+
+Markdown标记语言可使用任何编辑器进行编写，同时也可以借助一些可视化编辑器进行辅助编写，提高文档编写效率。其中推荐以下两款编辑器：
+
+- [Typora](https://www.typora.io/) `本所使用工具`
+- [MarkdownPad](http://www.markdownpad.com/)
