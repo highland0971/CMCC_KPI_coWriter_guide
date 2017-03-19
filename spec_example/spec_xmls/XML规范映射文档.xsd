@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.chinamobile.com/spec"
+xmlns="http://www.chinamobile.com/spec"
+elementFormDefault="qualified">
+
+<!-- 简易元素的定义 -->
+
+<xs:element name="Interface">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="S1-MME"/>
+			<xs:enumeration value="S1-U"/>
+			<xs:enumeration value="S6a"/>
+			<xs:enumeration value="S11"/>
+			<xs:enumeration value="Rx"/>
+			<xs:enumeration value="S1-MME/X2"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="Code" type="xs:string"/>
+<xs:element name="Procedure" type="xs:string"/>
+<xs:element name="Name_EN" type="xs:string"/>
+<xs:element name="Name_CN" type="xs:string"/>
+<xs:element name="Unit">
+	<xs:simpleType>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="次"/>
+			<xs:enumeration value="个"/>
+			<xs:enumeration value="ms"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:element>
+<xs:element name="Space_Dim" type="xs:string"/>
+<xs:element name="Time_Dim" type="xs:string"/>
+<xs:element name="Description" type="xs:string"/>
+<xs:element name="Trigger_Spot" type="xs:string"/>
+<xs:element name="Data_Sources" type="xs:string"/>
+<xs:element name="Algorithm" type="xs:string"/>
+<xs:element name="Specifications" type="xs:string"/>
+<xs:element name="Comments" type="xs:string"/>
+<xs:element name="Usage" type="xs:string"/>
+<xs:element name="Modify_Reason" type="xs:string"/>
+
+<!-- 属性的定义 -->
+<xs:attribute name="author" type="xs:string"/>
+
+<!-- 复合元素的定义 -->
+<xs:element name="Table_KPI_RawCounters">
+    <xs:complexType>
+		<xs:sequence>
+			<xs:element name="Counter" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="Interface" />
+						<xs:element ref="Code"/>
+						<xs:element ref="Procedure"/>
+						<xs:element ref="Name_EN"/>
+						<xs:element ref="Name_CN"/>
+						<xs:element ref="Unit"/>
+						<xs:element ref="Space_Dim"/>
+						<xs:element ref="Time_Dim"/>
+						<xs:element ref="Description"/>
+						<xs:element ref="Trigger_Spot"/>
+						<xs:element ref="Data_Sources"/>
+						<xs:element ref="Algorithm"/>
+						<xs:element ref="Specifications" />
+						<xs:element ref="Comments"/>
+						<xs:element ref="Modify_Reason"/>
+					</xs:sequence>
+					<xs:attribute ref="author" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+<xs:element name="Table_KPIs">
+    <xs:complexType>
+		<xs:sequence>
+			<xs:element name="KPI" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element ref="Interface" />
+						<xs:element ref="Code"/>
+						<xs:element ref="Procedure"/>
+						<xs:element ref="Name_EN"/>
+						<xs:element ref="Name_CN"/>
+						<xs:element ref="Unit"/>
+						<xs:element ref="Space_Dim"/>
+						<xs:element ref="Time_Dim"/>
+						<xs:element ref="Description"/>
+						<xs:element ref="Usage"/>
+						<xs:element ref="Data_Sources"/>
+						<xs:element ref="Algorithm"/>
+						<xs:element ref="Specifications" />
+						<xs:element ref="Comments"/>
+						<xs:element ref="Modify_Reason"/>
+					</xs:sequence>
+					<xs:attribute ref="author" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

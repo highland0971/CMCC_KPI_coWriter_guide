@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:Table_KPI_RawCounters xmlns:ns1="http://www.chinamobile.com/spec">
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHE01</ns1:Code>
+		<ns1:Procedure>附着</ns1:Procedure>
+		<ns1:Name_EN>MM.AttEpsAttach</ns1:Name_EN>
+		<ns1:Name_CN>EPS附着请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>EPS附着请求次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的EPS附着请求消息（ATTACH REQUEST，3GPP TS 24.301），不计重发。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHE02</ns1:Code>
+		<ns1:Procedure>附着</ns1:Procedure>
+		<ns1:Name_EN>MM.SuccEpsAttach</ns1:Name_EN>
+		<ns1:Name_CN>EPS附着成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>EPS附着成功次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送附着完成消息（ATTACH COMPLETE，3GPP TS 24.301），不计重发。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Procedure Status为0的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>附着</ns1:Procedure>
+		<ns1:Name_EN>MM.AttCombinedEpsAttach</ns1:Name_EN>
+		<ns1:Name_CN>Combined EPS附着请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>Combined EPS附着请求次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的EPS附着请求消息（ATTACH REQUEST，3GPP TS 24.301），其中EPS attach type为combined EPS/IMSI attach，不计重发。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Keyword 1字段为2的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>附着</ns1:Procedure>
+		<ns1:Name_EN>MM.SuccCombinedEpsAttach</ns1:Name_EN>
+		<ns1:Name_CN>Combined EPS附着成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>Combined EPS附着成功次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送附着完成消息（ATTACH COMPLETE，3GPP TS 24.301），其中EPS attach result为combined EPS/IMSI attach，不计重发。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Keyword 1字段为2且Procedure Status为0且Keyword 2字段为2的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHF01</ns1:Code>
+		<ns1:Procedure>跟踪区更新</ns1:Procedure>
+		<ns1:Name_EN>MM.AttTau</ns1:Name_EN>
+		<ns1:Name_CN>跟踪区更新请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>跟踪区更新请求次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的TRACKING AREA UPDATE REQUEST消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为5的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHF02</ns1:Code>
+		<ns1:Procedure>跟踪区更新</ns1:Procedure>
+		<ns1:Name_EN>MM.SuccTau</ns1:Name_EN>
+		<ns1:Name_CN>跟踪区更新成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>跟踪区更新成功次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的TRACKING AREA UPDATE COMPLETE消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为5且Procedure Status为0的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHF01</ns1:Code>
+		<ns1:Procedure>联合跟踪区更新</ns1:Procedure>
+		<ns1:Name_EN>MM.AttCombinedTau</ns1:Name_EN>
+		<ns1:Name_CN>联合跟踪区更新请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>联合跟踪区更新请求次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的TRACKING AREA UPDATE REQUEST消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为5且Keyword 1字段为1或者2的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHF02</ns1:Code>
+		<ns1:Procedure>联合跟踪区更新</ns1:Procedure>
+		<ns1:Name_EN>MM.SuccCombinedTau</ns1:Name_EN>
+		<ns1:Name_CN>联合跟踪区更新成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>联合跟踪区更新成功次数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的TRACKING AREA UPDATE COMPLETE消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为5且Keyword 1字段为1或者2且Procedure Status为0且Keyword 2字段为1或者5的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN>HO.AttHandoverOut</ns1:Name_EN>
+		<ns1:Name_CN>MME内S1接口每相邻关系切出尝试次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>切出尝试次数；</ns1:Description>
+		<ns1:Trigger_Spot>MME收到源eNB发送的HANDOVER REQUIRED消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元相邻关系粒度下，Procedure Type为16的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN>HO.SuccHandoverOut</ns1:Name_EN>
+		<ns1:Name_CN>MME内S1接口切出成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>切出成功次数；</ns1:Description>
+		<ns1:Trigger_Spot>UE收到MME发送的HANDOVER COMMAND消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元相邻关系粒度下，Procedure Type为16且Procedure Status为0的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN>HO.AttHandoverIn</ns1:Name_EN>
+		<ns1:Name_CN>MME内S1接口切入尝试次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>切入尝试次数；</ns1:Description>
+		<ns1:Trigger_Spot>目标eNB收到MME发送的HANDOVER REQUEST消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元相邻关系粒度下，Procedure Type为15的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN>HO.SuccHandoverIn</ns1:Name_EN>
+		<ns1:Name_CN>MME内S1接口切入成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>切入成功次数；</ns1:Description>
+		<ns1:Trigger_Spot>MME收到目标eNB回复的HANDOVER NOTIFY消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元相邻关系粒度下，Procedure Type为15且Procedure Status为0的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHH01</ns1:Code>
+		<ns1:Procedure>X2切换</ns1:Procedure>
+		<ns1:Name_EN>HO.AttIntraMmeInterEnbX2</ns1:Name_EN>
+		<ns1:Name_CN>MME内X2接口切换尝试数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME内X2接口切换尝试数</ns1:Description>
+		<ns1:Trigger_Spot>统计MME收到目标eNodeB发出的路径选择请求（Path Switch Request，3GPP TS 23.401）消息的个数；</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元相邻关系粒度下，Procedure Type为14的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHH02</ns1:Code>
+		<ns1:Procedure>X2切换</ns1:Procedure>
+		<ns1:Name_EN>HO.SuccIntraMmeInterEnbX2</ns1:Name_EN>
+		<ns1:Name_CN>MME内X2接口切换成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME内X2接口切换成功次数</ns1:Description>
+		<ns1:Trigger_Spot>统计MME向目标eNodeB发送路径选择请求确认（Path Switch Request Ack，3GPP TS 23.401）消息的个数；</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元相邻关系粒度下，Procedure Type为14且Procedure Status为0的S1-MME接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHA05</ns1:Code>
+		<ns1:Procedure>专用承载建立</ns1:Procedure>
+		<ns1:Name_EN>SM.ActDedicatedEpsBearerRequest</ns1:Name_EN>
+		<ns1:Name_CN>专用承载激活请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计MME向UE发起激活EPS专用承载的次数</ns1:Description>
+		<ns1:Trigger_Spot>MME向UE发送ACTIVATE DEDICATED EPS BEARER CONTEXT REQUEST消息（3GPP TS 23.401)</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为9、10、13的S1-MME接口XDR中Bearer 1 Status到Bearer N Status为1、2的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHA06</ns1:Code>
+		<ns1:Procedure>专用承载建立</ns1:Procedure>
+		<ns1:Name_EN>SM.ActDedicatedEpsBearerAccept</ns1:Name_EN>
+		<ns1:Name_CN>专用承载激活成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计UE向MME确认专用承载建立成功的次数</ns1:Description>
+		<ns1:Trigger_Spot>UE向MME发送ACTIVATE DEDICATED EPS BEARER CONTEXT ACCEPT消息（3GPP TS 23.401)</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为9、10、13的S1-MME接口XDR中Bearer 1 Status到Bearer N Status为1的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>ENBHG01</ns1:Code>
+		<ns1:Procedure>寻呼</ns1:Procedure>
+		<ns1:Name_EN>PAG.PagReceived</ns1:Name_EN>
+		<ns1:Name_CN>寻呼记录接收个数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计eNB收到的寻呼消息个数</ns1:Description>
+		<ns1:Trigger_Spot>eNB从MME成功收到的“寻呼”消息(PAGING),且TAI List含有本小区的TA（3GPP TS 36.413）。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为4且PAGING消息中的TAI List含有本小区的TA的S1-MME接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME，X2</ns1:Interface>
+		<ns1:Code>ENBHB12</ns1:Code>
+		<ns1:Procedure>S1切换，X2切换</ns1:Procedure>
+		<ns1:Name_EN>ERAB.HoFail</ns1:Name_EN>
+		<ns1:Name_CN>切出失败的E-RAB数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计切出失败的E-RAB个数</ns1:Description>
+		<ns1:Trigger_Spot>（1）对于基于S1接口的切换，统计MME发给eNB的Handover Command消息中包括的E-RABs to Release List IE 中的E-RAB个数。（3GPP TS 36.413）
+（2）对于基于X2接口的切换，target eNB发给Source eNB的Handover Request ACK消息中的E-RABs Not Admitted List IE 中的E-RAB数（3GPP TS 36.423）
+注：在网络开启Multiple HO功能时，只统计被选中的目标小区对应的Handover Command和Handover Request ACK消息。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR，X2接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为16的S1-MME接口XDR中Bearer 1 Status到Bearer N Status为2的承载个数与Procedure Type为1的X2接口XDR中Bearer 1 Status到Bearer N Status为2的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>ENBHB05</ns1:Code>
+		<ns1:Procedure>初始上下文建立，E-RAB建立</ns1:Procedure>
+		<ns1:Name_EN>ERAB.NbrAttEstab</ns1:Name_EN>
+		<ns1:Name_CN>E-RAB建立请求数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计请求建立的E-RAB个数</ns1:Description>
+		<ns1:Trigger_Spot>eNB接收到MME发来的“初始上下文建立请求消息”（INITIAL CONTEXT SETUP REQUEST）或 “E-RAB建立请求”（E-RAB SETUP REQUEST）消息，消息中包含的E-RAB个数。每个业务类型对应一个子测量项。（3GPP TS 36.413）。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为2、3、5、7、9、10、13的S1-MME接口XDR中Bearer 1 Status到Bearer N Status为1、2的承载个数之和，可区分QCI分别统计</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>ENBHB06</ns1:Code>
+		<ns1:Procedure>初始上下文建立，E-RAB建立</ns1:Procedure>
+		<ns1:Name_EN>ERAB.NbrSuccEstab</ns1:Name_EN>
+		<ns1:Name_CN>E-RAB建立成功数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计成功建立的E-RAB个数</ns1:Description>
+		<ns1:Trigger_Spot>统计E-RAB建立成功个数。eNB向MME发送“初始上下文建立响应”（INITIAL CONTEXT SETUP RESPONSE）消息或“E-RAB建立响应”（E-RAB SETUP RESPONSE）消息中，成功建立的E-RAB个数。每个业务类型对应一个子测量项。（3GPP TS 36.413）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为2、3、5、7、9、10、13的S1-MME接口XDR中Bearer 1 Status到Bearer N Status为1的承载个数之和，可区分QCI分别统计</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME，X2</ns1:Interface>
+		<ns1:Code>ENBHB04</ns1:Code>
+		<ns1:Procedure>S1切换，X2切换</ns1:Procedure>
+		<ns1:Name_EN>ERAB.NbrHoInc</ns1:Name_EN>
+		<ns1:Name_CN>切换入E-RAB数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计切入的E-RAB个数</ns1:Description>
+		<ns1:Trigger_Spot>统计小区切换入E-RAB个数。eNB收到UE发送的“RRC连接重配置完成”消息（RRCConnectionReconfigurationComplete），指示UE小区切换入时，统计该RRC连接对应的E-RAB个数，包括系统间的切换。（3GPP TS 23.401，TS 36.331和TS 36.413）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为15的S1-MME接口XDR中Bearer 1 Status到Bearer N Status为1的承载个数与Procedure Type为1的X2接口XDR中Bearer 1 Status到Bearer N Status为1的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>MMEHB01</ns1:Code>
+		<ns1:Procedure>MME建立缺省承载</ns1:Procedure>
+		<ns1:Name_EN>SM.AttCreateDefaultS5S8BearerMme</ns1:Name_EN>
+		<ns1:Name_CN>MME请求建立的缺省S5S8承载数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME向SGW请求建立的缺省S5/S8承载的个数</ns1:Description>
+		<ns1:Trigger_Spot>MME向SGW发送Create Session Request消息的次数，消息中可能包括一个缺省承载和多个专用承载。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S10/S11接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的S10/S11接口XDR中，Bearer 1 Type到Bearer N Type中，值为1的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>MMEHB02</ns1:Code>
+		<ns1:Procedure>MME建立缺省承载</ns1:Procedure>
+		<ns1:Name_EN>SM.SuccCreateDefaultS5S8BearerMme</ns1:Name_EN>
+		<ns1:Name_CN>MME成功建立的缺省S5S8承载数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>SGW返回成功建立的缺省S5/S8承载的个数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到来自SGW的Create Session Response消息，且其cause value=16(Request accepted)或17（Request accepted partially）的消息个数（3GPP TS 29.274）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S10/S11接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Procedure Status为0的S10/S11接口XDR中，Bearer 1 Type到Bearer N Type中，值为1的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>MMEHB04</ns1:Code>
+		<ns1:Procedure>MME建立专用承载</ns1:Procedure>
+		<ns1:Name_EN>SM.AttCreateDedicatedS5S8BearerMme</ns1:Name_EN>
+		<ns1:Name_CN>MME请求建立的专用S5S8承载数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME向SGW请求建立的专用S5/S8承载的个数</ns1:Description>
+		<ns1:Trigger_Spot>MME向SGW发送Create Session Request消息中的专用承载的个数（专用承载的Bearer Contexts  IE 的EPS Bearer ID字段不等于Linked EPS Bearer ID）。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S10/S11接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的S10/S11接口XDR中，Bearer 1 Type到Bearer N Type中，值为2的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>MMEHB05</ns1:Code>
+		<ns1:Procedure>MME建立专用承载</ns1:Procedure>
+		<ns1:Name_EN>SM.SuccCreateDedicatedS5S8BearerMme</ns1:Name_EN>
+		<ns1:Name_CN>MME成功建立的专用S5S8承载数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>SGW返回成功建立的专用S5/S8承载的个数</ns1:Description>
+		<ns1:Trigger_Spot>MME收到来自SGW的Create Session Response，消息中Bearer Contexts  IE的cause value为16(Request accepted）或17（Request accepted partially）的专用承载的个数，（3GPP TS 29.274）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S10/S11接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Procedure Status为0的S10/S11接口XDR中，Bearer 1 Type到Bearer N Type中，值为2的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>SGWHA03</ns1:Code>
+		<ns1:Procedure>SGW建立缺省承载</ns1:Procedure>
+		<ns1:Name_EN>SM.AttDefaultEpsBearerS11</ns1:Name_EN>
+		<ns1:Name_CN>SGW从MME收到缺省承载建立请求个数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计ServingGW收到请求建立缺省承载数目</ns1:Description>
+		<ns1:Trigger_Spot>ServingGW 收到会话建立请求（Create Session Request，3GPP TS 29.274）的数目,不计重发；</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S10/S11接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的S10/S11接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项SGW-PM(V1.3.1).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>SGWHA04</ns1:Code>
+		<ns1:Procedure>SGW建立缺省承载</ns1:Procedure>
+		<ns1:Name_EN>SM.SuccDefaultEpsBearerS11</ns1:Name_EN>
+		<ns1:Name_CN>SGW向MME发送缺省承载建立成功个数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计ServingGW发送成功建立缺省承载个数；</ns1:Description>
+		<ns1:Trigger_Spot>ServingGW发送会话建立响应（Create Session Response，3GPP TS 29.274）成功建立缺省承载的个数，其中cause value为Request accepted，不计重发；</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S10/S11接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Procedure Status为0的S10/S11接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项SGW-PM(V2.0.1).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S6a</ns1:Interface>
+		<ns1:Code>HSSHF01</ns1:Code>
+		<ns1:Procedure>更新位置</ns1:Procedure>
+		<ns1:Name_EN>DIAM.UpdateLocationReq</ns1:Name_EN>
+		<ns1:Name_CN>更新位置请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计HSS收到的位置请求个数</ns1:Description>
+		<ns1:Trigger_Spot>SAE-HSS接收到MME/S4SGSN始发的“位置更新请求消息ULR”消息（ULR(Update-Location-Request)）。（3GPP TS29.272）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S6a接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的S6a接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项HSS-PM(V2.1.1).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S6a</ns1:Interface>
+		<ns1:Code>HSSHF02</ns1:Code>
+		<ns1:Procedure>更新位置</ns1:Procedure>
+		<ns1:Name_EN>DIAM.UpdateLocationAnsSucc</ns1:Name_EN>
+		<ns1:Name_CN>更新位置成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计SAE-HSS返回的“位置更新成功的响应消息ULA”的个数</ns1:Description>
+		<ns1:Trigger_Spot>SAE-HSS向MME/S4SGSN返回“位置更新成功的响应消息ULA”时（ULA(Update-Location-Answer)），其中的AVP值  Result-Code =2XXX。（3GPP TS29.272）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S6a接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Procedure Status为0的S6a接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项HSS-PM(V2.1.1).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S6a</ns1:Interface>
+		<ns1:Code>HSSHF04</ns1:Code>
+		<ns1:Procedure>用户鉴权</ns1:Procedure>
+		<ns1:Name_EN>DIAM.AucInfoReq</ns1:Name_EN>
+		<ns1:Name_CN>鉴权信息查询请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计SAE-HSS接收到的“鉴权请求消息”个数</ns1:Description>
+		<ns1:Trigger_Spot>SAE-HSS接收到的MME/S4SGSN始发的“鉴权请求消息”（AIR(Authentication-Information-Request)）。（3GPP TS29.272）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S6a接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为6的S6a接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项HSS-PM(V2.1.1).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S6a</ns1:Interface>
+		<ns1:Code>HSSHF05</ns1:Code>
+		<ns1:Procedure>用户鉴权</ns1:Procedure>
+		<ns1:Name_EN>DIAM.AucInfoAnsSucc</ns1:Name_EN>
+		<ns1:Name_CN>鉴权信息查询成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计SAE-HSS返回的“鉴权成功的响应消息AIA”的个数</ns1:Description>
+		<ns1:Trigger_Spot>当SAE-HSS向MME/S4SGSN返回“鉴权成功的响应消息AIA”消息（AIA(Authentication-Information-Answer)），其中的AVP值  Result-Code =2XXX。（3GPP TS29.272）
+。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S6a接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为6且Procedure Status为0的S6a接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项HSS-PM(V2.1.1).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHA05</ns1:Code>
+		<ns1:Procedure>RRC连接建立</ns1:Procedure>
+		<ns1:Name_EN>RRC.AttConnEstab</ns1:Name_EN>
+		<ns1:Name_CN>RRC连接建立请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计RRC连接建立请求的次数（含重发），并区分建立原因分别统计。
+含重发是指RRC 层检测成功一次就累加一次</ns1:Description>
+		<ns1:Trigger_Spot>eNB接收到UE发送的“RRC连接请求”（RRCConnectionRequest）消息，每个EstablishmentCause对应一个子测量项。（3GPP TS 36.331）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的Uu接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHA06</ns1:Code>
+		<ns1:Procedure>RRC连接建立</ns1:Procedure>
+		<ns1:Name_EN>RRC.SuccConnEstab</ns1:Name_EN>
+		<ns1:Name_CN>RRC连接建立成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计RRC连接建立成功的次数</ns1:Description>
+		<ns1:Trigger_Spot>eNB接收到UE发送的“RRC连接建立完成”（RRCConnectionSetupComplete）消息，每个EstablishmentCause对应一个子测量项。（3GPP TS 36.331）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1且Procedure Status为0的Uu接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHA08</ns1:Code>
+		<ns1:Procedure>RRC连接重建</ns1:Procedure>
+		<ns1:Name_EN>RRC.SuccConnReestab</ns1:Name_EN>
+		<ns1:Name_CN>RRC连接重建成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计RRC连接重建成功的次数,并区分重建原因分别统计</ns1:Description>
+		<ns1:Trigger_Spot>eNB接收到UE发来的“RRC连接重建完成”（RRCConnectionReestablishmentComplete）消息。（3GPP TS 36.331）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为4且Procedure Status为0的Uu接口XDR的个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHA01</ns1:Code>
+		<ns1:Procedure>RRC连接建立</ns1:Procedure>
+		<ns1:Name_EN>RRC.SetupTimeMean</ns1:Name_EN>
+		<ns1:Name_CN>RRC连接平均建立时长</ns1:Name_CN>
+		<ns1:Unit>ms</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计RRC连接平均建立时长。</ns1:Description>
+		<ns1:Trigger_Spot>在预先设定测量周期内，统计每一个成功建立的RRC连接的时长并将其累加，即从eNB收到“RRC CONNECTION REQUEST”消息到 eNB收到“CONNECTION SETUP COMPLETE”消息之间的间隔时长。用得到该统计周期内的总时长除以该周期内成功建立的RRC连接个数，则得到每个RRC连接的平均建立时长。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的Uu接口XDR中，Procedure End Time的值减去Procedure Start Time的值的平均值</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHA02</ns1:Code>
+		<ns1:Procedure>RRC连接建立</ns1:Procedure>
+		<ns1:Name_EN>RRC.SetupTimeMax</ns1:Name_EN>
+		<ns1:Name_CN>RRC连接最大建立时长</ns1:Name_CN>
+		<ns1:Unit>ms</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计RRC连接最大建立时长。</ns1:Description>
+		<ns1:Trigger_Spot>在预先设定测量周期内，统计每一个成功建立的RRC连接的时长，即从eNB收到“RRC CONNECTION REQUEST”消息到 eNB收到“CONNECTION SETUP COMPLETE”消息之间的间隔时长。取该统计周期内的RRC连接时长的最大值，则得到每个RRC连接的最大建立时长。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为1的Uu接口XDR中，Procedure End Time的值减去Procedure Start Time的值的最大值</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHC07</ns1:Code>
+		<ns1:Procedure>UE上下文释放，S1 Reset</ns1:Procedure>
+		<ns1:Name_EN>CONTEXT.AttRelEnb</ns1:Name_EN>
+		<ns1:Name_CN>eNB请求释放上下文数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计由eNB发起所释放的UE上下文的个数</ns1:Description>
+		<ns1:Trigger_Spot>eNB向MME发送“UE 上下文释放请求”（UE CONTEXT RELEASE REQUEST）消息或者S1 Reset消息中包含的上下文个数，每个原因对应一个子测量项，其中正常释放的原因包括：User Inactivity, CS Fallback triggered, Inter-RAT Redirection、UE Not Available for PS Service、Redirection towards 1xRTT。（3GPP TS 36.413）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为20且Keyword 1为0的S1-MME接口XDR个数，可区分释放原因分别统计</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHC07</ns1:Code>
+		<ns1:Procedure>UE上下文释放</ns1:Procedure>
+		<ns1:Name_EN>CONTEXT.AttRelEnb.Normal</ns1:Name_EN>
+		<ns1:Name_CN>正常的eNB请求释放上下文数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计由eNB发起的正常释放的UE上下文的个数</ns1:Description>
+		<ns1:Trigger_Spot>eNB向MME发送“UE 上下文释放请求”（UE CONTEXT RELEASE REQUEST）消息或者S1 Reset消息中包含的上下文个数，每个原因对应一个子测量项，其中正常释放的原因包括：User Inactivity, CS Fallback triggered, Inter-RAT Redirection、UE Not Available for PS Service、Redirection towards 1xRTT。（3GPP TS 36.413）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为20且Keyword 1为0且Cause为正常原因的S1-MME接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHC02</ns1:Code>
+		<ns1:Procedure>UE初始上下文建立</ns1:Procedure>
+		<ns1:Name_EN>CONTEXT.SuccInitalSetup</ns1:Name_EN>
+		<ns1:Name_CN>初始上下文建立成功次数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计eNB中成功建立的UE上下文个数</ns1:Description>
+		<ns1:Trigger_Spot>eNB向MME发送“初始上下文建立响应”（INITIAL CONTEXT SETUP RESPONSE）消息。（3GPP TS 36.413）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为18且Procedure status为0的S1-MME接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHC09</ns1:Code>
+		<ns1:Procedure>UE初始上下文建立，UE上下文释放、S1 Reset</ns1:Procedure>
+		<ns1:Name_EN>CONTEXT.NbrLeft</ns1:Name_EN>
+		<ns1:Name_CN>遗留上下文个数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计eNB中遗留的UE上下文个数</ns1:Description>
+		<ns1:Trigger_Spot>当采集周期结束时，测量当前小区已经存在的UE CONTEXT个数。（3GPP TS 36.413）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME、X2接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，（Procedure Type为18且Procedure status为0的S1-MME接口XDR个数+Procedure Type为15且Procedure status为0的S1-MME接口XDR个数+Procedure Type为1且Procedure status为0且Target Cell ID与当前小区ID相同的X2接口XDR个数)减去（Procedure Type为20且Procedure status为0的S1-MME接口XDR个数+Procedure Type为16且Procedure status为0的S1-MME接口XDR个数+Procedure Type为1且Procedure status为0且Source Cell ID与当前小区ID相同的X2接口XDR个数）</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHD13</ns1:Code>
+		<ns1:Procedure>eNB内切换</ns1:Procedure>
+		<ns1:Name_EN>HO.AttOutIntraEnb</ns1:Name_EN>
+		<ns1:Name_CN>eNB内切换出请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计eNB内小区间切换请求次数</ns1:Description>
+		<ns1:Trigger_Spot>eNB向UE发送携带mobilityControlInfo 的“RRC连接重配置”消息（RRCConnectionReconfiguration），指示eNB内小区间切换出请求。（3GPP TS 36.331）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为7的Uu接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>ENBHD14</ns1:Code>
+		<ns1:Procedure>eNB内切换</ns1:Procedure>
+		<ns1:Name_EN>HO.SuccOutIntraEnb</ns1:Name_EN>
+		<ns1:Name_CN>eNB内切换出成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计eNB内小区间切换成功次数</ns1:Description>
+		<ns1:Trigger_Spot>eNB收到UE发送的“RRC连接重配置完成”消息（RRCConnectionReconfigurationComplete），指示eNB内小区间切换出成功。（3GPP TS 36.331）</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Uu接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为7且Procedure status为0的Uu接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-U</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>用户业务</ns1:Procedure>
+		<ns1:Name_EN>SUB.ActSubs</ns1:Name_EN>
+		<ns1:Name_CN>LTE业务的活跃用户数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计一定时间范围内使用过LTE业务的用户的数量</ns1:Description>
+		<ns1:Trigger_Spot>在预先设定的测量周期内，统计每一个进行了LTE数据业务的用户的数量，注意需要对用户通过IMSI进行去重统计</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-U接口的各个XDR</ns1:Data_Sources>
+		<ns1:Algorithm>在一定的时间粒度及网元粒度下，去重统计所有数据面XDR(S1-U/HTTP/DNS/FTP/EMAIL/IM/VOIP/RTSP/P2P/)中出现的IMSI的次数
+注意：因为此测量项为去重统计，所以不能在时间和空间粒度上进行叠加统计，必须在每次统计时都单独进行去重统计</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项eNB网元统计数据需求规范-PM(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHA09</ns1:Code>
+		<ns1:Procedure>PDN连接</ns1:Procedure>
+		<ns1:Name_EN>SM.PdnConnectivityRequest.Ims</ns1:Name_EN>
+		<ns1:Name_CN>IMS网络PDN连接请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>UE请求建立PDN连接，其APN为IMS。</ns1:Description>
+		<ns1:Trigger_Spot>MME收到UE发送的PDN CONNECTIVITY REQUEST消息，其Access point name信息单元（IE)的值为IMS。（3GPP TS 24.301)</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为7且APN为IMS的S1-MME接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHA11</ns1:Code>
+		<ns1:Procedure>PDN连接</ns1:Procedure>
+		<ns1:Name_EN>SM.PdnConnectivityComplete.Ims</ns1:Name_EN>
+		<ns1:Name_CN>IMS网络PDN连接完成次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>UE确认指向IMS网络的PDN连接建立完成。</ns1:Description>
+		<ns1:Trigger_Spot>MME收到ENB发来的PDN Connectivity complete消息。
+注：尽管在23.401的5.10节（Multiple PDN Support）的图（UE requested PDN connectivity）中提及了PDN Connectivity complete消息，且它通过UPLINK NAS Transport消息携带，但在NAS层协议（24.301）中并未找到PDN Connectivity complete的定义，且UPLINK NAS Transport的消息格式表明它只用于携带短信。因此 ，如果在实现中无此消息，可考虑以PDP连接建立过程中MME收到的Activate default EPS bearer context accept消息替代。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为7且APN为IMS且Procedure Status为0的S1-MME接口XDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHA05</ns1:Code>
+		<ns1:Procedure>VoLTE语音专用承载建立</ns1:Procedure>
+		<ns1:Name_EN>SM.ActDedicatedEpsBearerRequest.QCI1</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE语音专用承载激活请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计MME向UE发起激活VoLTE语音EPS专用承载的次数</ns1:Description>
+		<ns1:Trigger_Spot>MME向UE发送ACTIVATE DEDICATED EPS BEARER CONTEXT REQUEST消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=1的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为13的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含1且QCI为1的Bearer Status为1、2的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>MMEHA06</ns1:Code>
+		<ns1:Procedure>VoLTE语音专用承载建立</ns1:Procedure>
+		<ns1:Name_EN>SM.ActDedicatedEpsBearerAccept.QCI1</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE语音专用承载激活成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计UE向MME确认VoLTE语音专用承载建立成功的次数</ns1:Description>
+		<ns1:Trigger_Spot>UE向MME发送ACTIVATE DEDICATED EPS BEARER CONTEXT ACCEPT消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=1的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为13的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含1且QCI为1的Bearer Status为1的承载个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+中国移动北向接口规范测量项MME-PM(V2.0.2).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE视频专用承载建立</ns1:Procedure>
+		<ns1:Name_EN>SM.ActDedicatedEpsBearerRequest.QCI2</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE视频专用承载激活请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计MME向UE发起激活VoLTE视频EPS专用承载的次数</ns1:Description>
+		<ns1:Trigger_Spot>MME向UE发送ACTIVATE DEDICATED EPS BEARER CONTEXT REQUEST消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=2的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为13的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含2且QCI为2的Bearer Status为1、2的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+目前EPC网元统计数据需求规范中暂无该测量项</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE视频专用承载建立</ns1:Procedure>
+		<ns1:Name_EN>SM.ActDedicatedEpsBearerAccept.QCI2</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE视频专用承载激活成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计UE向MME确认VoLTE视频专用承载建立成功的次数</ns1:Description>
+		<ns1:Trigger_Spot>UE向MME发送ACTIVATE DEDICATED EPS BEARER CONTEXT ACCEPT消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=2的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为13的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含2且QCI为2的Bearer Status为1的承载个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+目前EPC网元统计数据需求规范中暂无该测量项</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE语音专有承载的更新</ns1:Procedure>
+		<ns1:Name_EN>SM.ModEpsBearerRequest.QCI1</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE语音专有承载的更新请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计MME向UE请求VoLTE语音专用承载更新的次数</ns1:Description>
+		<ns1:Trigger_Spot>MME向UE发送MODIFY EPS BEARER CONTEXT REQUEST消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=1的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为9、10、12的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含1且QCI为1的Bearer Status为3、4的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+目前EPC网元统计数据需求规范中暂无该测量项</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE语音专有承载的更新</ns1:Procedure>
+		<ns1:Name_EN>SM.ModEpsBearerAccept.QCI1</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE语音专有承载的更新成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计UE向MME请求VoLTE语音专用承载更新的次数</ns1:Description>
+		<ns1:Trigger_Spot>UE向MME发送MODIFY EPS BEARER CONTEXT ACCEPT消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=1的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为9、10、12的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含1且QCI为1的Bearer Status为3的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+目前EPC网元统计数据需求规范中暂无该测量项</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE视频专有承载的更新</ns1:Procedure>
+		<ns1:Name_EN>SM.ModEpsBearerRequest.QCI2</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE视频专有承载的更新请求次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计MME向UE请求VoLTE视频专用承载更新的次数</ns1:Description>
+		<ns1:Trigger_Spot>MME向UE发送MODIFY EPS BEARER CONTEXT REQUEST消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=2的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为9、10、12的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含2且QCI为2的Bearer Status为3、4的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+目前EPC网元统计数据需求规范中暂无该测量项</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE视频专有承载的更新</ns1:Procedure>
+		<ns1:Name_EN>SM.ModEpsBearerAccept.QCI2</ns1:Name_EN>
+		<ns1:Name_CN>VoLTE视频专有承载的更新成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计UE向MME请求VoLTE视频专用承载更新的次数</ns1:Description>
+		<ns1:Trigger_Spot>UE向MME发送MODIFY EPS BEARER CONTEXT ACCEPT消息（3GPP TS 23.401)。针对VoLTE语音业务的QCI=2的专用承载单独统计。</ns1:Trigger_Spot>
+		<ns1:Data_Sources>S1-MME接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，Procedure Type为9、10、12的S1-MME接口XDR中Bearer 1 QCI到Bearer N QCI的值包含2且QCI为2的Bearer Status为3的承载个数之和</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+目前EPC网元统计数据需求规范中暂无该测量项</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAuthorizedReq</ns1:Name_EN>
+		<ns1:Name_CN> 应用会话授权尝试次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF接收SBC应用会话授权的尝试次数</ns1:Description>
+		<ns1:Trigger_Spot>PCRF收到SBC初始建立Rx会话或修改Rx会话AAR（3GPP 29214）请求</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=0，的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAuthorizedSucc</ns1:Name_EN>
+		<ns1:Name_CN> 应用会话授权成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF成功处理SBC应用会话授权请求的次数</ns1:Description>
+		<ns1:Trigger_Spot>PCRF针对初始建立Rx会话或修改Rx会话的AAR回复AAA（3GPP 29214）响应携带Result-Code为Diameter-success</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=0，且“RESULT_CODE”=2001的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权更新流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAuthorizeUpdateReq</ns1:Name_EN>
+		<ns1:Name_CN>应用会话授权更新尝试次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF接收SBC应用会话授权更新请求的次数</ns1:Description>
+		<ns1:Trigger_Spot>当PCRF收到PCEF的资源预留事件上报时，向SBC发送RAR（3GPP 29214）消息，即应用会话授权更新的尝试</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=1， “的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权更新流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAuthorizeUpdateSucc</ns1:Name_EN>
+		<ns1:Name_CN>应用会话授权更新成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF成功处理SBC应用会话授权更新请求的次数</ns1:Description>
+		<ns1:Trigger_Spot>当PCRF收到PCEF的事件上报时，向SBC发送RAR（3GPP 29214）消息，通知该事件的发生。PCRF收到由SBC返回的结果码为“DIAMETER-SUCCESS (2001)”的RAA（3GPP 29214）响应消息，即应用会话授权更新成功</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>统计一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=1，且“RESULT_CODE”=2001的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>应用会话授权终止流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAuthorizeTerminateReq</ns1:Name_EN>
+		<ns1:Name_CN>应用会话授权终止尝试次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF接收SBC应用会话授权终止的尝试次数</ns1:Description>
+		<ns1:Trigger_Spot>PCRF收到SBC终止Rx会话STR回复STA响应</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=2，的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>应用会话授权终止流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAuthorizeTerminateSucc</ns1:Name_EN>
+		<ns1:Name_CN>应用会话授权终止成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF成功处理SBC应用会话授权终止请求的次数</ns1:Description>
+		<ns1:Trigger_Spot>PCRF针对终止Rx会话的STA回复STA（3GPP 29214）响应携带Result-Code为Diameter-success</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=2且“RESULT_CODE” =2001的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>应用会话异常终止流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAbortReq</ns1:Name_EN>
+		<ns1:Name_CN>应用会话异常终止尝试次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计PCRF向SBC发送ASR消息即应用会话异常终止的尝试消息的次数</ns1:Description>
+		<ns1:Trigger_Spot>PCRF向SBC发送ASR消息即应用会话异常终止的尝试消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=3的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+	<ns1:Counter ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>应用会话异常终止流程</ns1:Procedure>
+		<ns1:Name_EN>Service.VOLTE.PccAbortSucc</ns1:Name_EN>
+		<ns1:Name_CN>应用会话异常终止成功次数</ns1:Name_CN>
+		<ns1:Unit>次</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>统计SBC成功处理PCRF应用会话异常终止请求的次数</ns1:Description>
+		<ns1:Trigger_Spot>PCRF向SBC发送ASR消息通知Rx会话异常终止时，PCRF收到由SBC返回的结果码为“DIAMETER-SUCCESS (2001)”的ASA响应消息</ns1:Trigger_Spot>
+		<ns1:Data_Sources>Rx接口XDR</ns1:Data_Sources>
+		<ns1:Algorithm>一定的时间粒度及网元粒度下，字段"Interface"=26，“Procedure Type”=3且“RESULT_CODE”=2001的xDR个数</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+		<ns1:Modify_Reason/>
+	</ns1:Counter>
+</ns1:Table_KPI_RawCounters>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:Table_KPIs xmlns:ns1="http://www.chinamobile.com/spec">
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>EC0101</ns1:Code>
+		<ns1:Procedure>附着</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>EPS附着成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>用户附着至LTE网络的成功率</ns1:Description>
+		<ns1:Usage>附着失败用户将无法使用EPS网络，对用户感知影响大。附着成功率还可用来辅助分析核心网的局数据制作是否正确，如是否漏做某号段的数据、路由指向是否正确等。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>MM.SuccEpsAttach /MM.AttEpsAttach</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>联合附着</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>联合附着成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>用户附着至LTE和CS网络的成功率</ns1:Description>
+		<ns1:Usage>联合附着失败用户将无法使用EPS网络和CS网络，对用户感知影响大。附着成功率还可用来辅助分析核心网的局数据制作是否正确，如是否漏做某号段的数据、路由指向、SGs配置是否正确等。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>MM.SuccCombinedEpsAttach/MM.AttCombinedEpsAttach</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>跟踪区更新</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>跟踪区更新成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>跟踪区更新成功与更新请求的比值</ns1:Description>
+		<ns1:Usage>跟踪区更新成功率体现了用户在LTE网络覆盖范围内移动时，保持附着状态、使用业务的能力。不同类别(MME内、MME间、SGW内、SGW间）的跟踪区更新成功率的对比还可用于分析MME和SGW之间的配合上是否存在问题（如不同厂家的互通等）。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>
+MM.SuccTau/MM.AttTau
+</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>联合跟踪区更新</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>联合跟踪区更新成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>联合跟踪区更新成功与联合更新请求的比值</ns1:Description>
+		<ns1:Usage>联合跟踪区更新成功率体现了用户在LTE网络覆盖范围内移动时，保持附着状态、使用LTE业务和CS业务的能力。不同类别(MME内、MME间、SGW内、SGW间）的跟踪区更新成功率的对比还可用于分析MME和SGW之间的配合上是否存在问题（如不同厂家的互通等），MME和MSC之间的配合是否存在问题。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>MM.SuccCombinedTau/MM.AttCombinedTau
+</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>MME内切换出成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>系统内MME内切换出的成功率</ns1:Description>
+		<ns1:Usage>切换成功率体现了用户在移动状态中的业务连续性。 </ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>HO.SuccHandoverOut / HO.AttHandoverOut</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>MME内切换入成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>系统内MME内切换入的成功率</ns1:Description>
+		<ns1:Usage>切换成功率体现了用户在移动状态中的业务连续性。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>HO.SuccHandoverIn / HO.AttHandoverIn</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>切换</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>MME内X2切换成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>EutranRelation</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>系统内MME内X2切换的成功率</ns1:Description>
+		<ns1:Usage>切换成功率体现了用户在移动状态中的业务连续性。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>HO.SuccIntraMmeInterEnbX2 / HO.AttIntraMmeInterEnbX2</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code>EC0109</ns1:Code>
+		<ns1:Procedure>专用承载激活</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>专用承载激活成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME向E-UTRAN激活专用承载的成功概率。</ns1:Description>
+		<ns1:Usage>E-UTRAN侧专用承载激活成功率会对EPS网络承载的业务的发起（或建立）过程产生影响。</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.ActDedicatedEpsBearerAccept / SM.ActDedicatedEpsBearerRequest</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>EC0110</ns1:Code>
+		<ns1:Procedure>MME建立缺省承载</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>MME建立缺省承载成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME向SGW请求建立缺省承载的成功概率</ns1:Description>
+		<ns1:Usage>附着过程、及PDN 连接建立过程，MME将向SGW发送建立会话请求（Create Session Request),请求建立缺省承载。
+S5S8接口的缺省承载建立成功率将影响上述过程的成功率。分局向的（即基于EpRpDynS11Mme粒度）的统计结果，也有助于分析SGW对承载建立成功率的影响。</ns1:Usage>
+		<ns1:Data_Sources>S11接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.SuccCreateDefaultS5S8BearerMme / SM.AttCreateDefaultS5S8BearerMme</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>EC0111</ns1:Code>
+		<ns1:Procedure>MME建立专用承载</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>MME建立专用承载成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>MME向SGW请求建立专用承载的成功率。</ns1:Description>
+		<ns1:Usage>在涉及SGW变更的切换过程中，MME将向SGW发送Create Session Request消息，请求建立缺省承载和专用承载。专用承载建立的成功率将影响切换过程中业务的连续性。 分局向的（即基于EpRpDynS11Mme粒度）的统计结果，也有助于分析SGW对承载建立成功率的影响。</ns1:Usage>
+		<ns1:Data_Sources>S11接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.SuccCreateDedicatedS5S8BearerMme / SM.AttCreateDedicatedS5S8BearerMme</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S11</ns1:Interface>
+		<ns1:Code>EC0401</ns1:Code>
+		<ns1:Procedure>SGW建立缺省承载</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>SGW建立缺省承载成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>SWG向MME发起的缺省承载建立过程成功的比率</ns1:Description>
+		<ns1:Usage>缺省承载建立是否成功，意味着用户是否可以接入PDN网络。</ns1:Usage>
+		<ns1:Data_Sources>S11接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.SuccDefaultEpsBearerS11/ SM.AttDefaultEpsBearerS11</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S6a</ns1:Interface>
+		<ns1:Code>EC0607</ns1:Code>
+		<ns1:Procedure>更新位置</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>HSS更新位置成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>HSS收到来自MME/S4-SGSN的更新位置请求后，成功执行的比率</ns1:Description>
+		<ns1:Usage>主要用于辅助分析HSS是否正常工作</ns1:Usage>
+		<ns1:Data_Sources>S6a接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>DIAM.UpdateLocationAnsSucc / DIAM.UpdateLocationReq</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S6a</ns1:Interface>
+		<ns1:Code>EC0608</ns1:Code>
+		<ns1:Procedure>用户鉴权</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>HSS鉴权信息查询成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>HSS收到来自MME/S4-SGSN的鉴权信息查询请求后，成功执行的比率</ns1:Description>
+		<ns1:Usage>主要用于辅助分析HSS是否正常工作</ns1:Usage>
+		<ns1:Data_Sources>S6a接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>DIAM.AucInfoAnsSucc / DIAM.AucInfoReq</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>EU0101</ns1:Code>
+		<ns1:Procedure>RRC连接建立</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>RRC连接建立成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>处于空闲模式（RRC_IDLE）下的UE收到非接入层请求建立信令连接时，UE将发起RRC连接建立过程。eNodeB收到RRC建立请求之后决定是否建立RRC连接。RRC连接建立成功率用RRC连接建立成功次数和RRC连接建立请求次数的比来表示</ns1:Description>
+		<ns1:Usage>反映eNodeB或者小区的UE接纳能力，RRC连接建立成功意味着UE与网络建立了信令连接。RRC连接建立，包括（如位置更新、系统间小区重选、注册等）的RRC连接建立</ns1:Usage>
+		<ns1:Data_Sources>Uu接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>RRC.SuccConnEstab/RRC.AttConnEstab</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EUTRAN网络运行管理指标(V1.1.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Uu、S1-MME</ns1:Interface>
+		<ns1:Code>EU0103</ns1:Code>
+		<ns1:Procedure>RRC连接建立,初始上下文建立，E-RAB建立</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>无线接通率
+</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>从综合的角度考虑接通率，可以把RRC连接建立成功率和E-RAB指派成功率联合起来。</ns1:Description>
+		<ns1:Usage>统计UE成功接入网络的性能。
+</ns1:Usage>
+		<ns1:Data_Sources>Uu和S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>ERAB.NbrSuccEstab/ERAB.NbrAttEstab*RRC.SuccConnEstab/RRC.AttConnEstab</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EUTRAN网络运行管理指标(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Uu</ns1:Interface>
+		<ns1:Code>EU0201</ns1:Code>
+		<ns1:Procedure>UE上下文释放，S1 Reset，UE初始上下文建立</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>无线掉线率
+</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>UE CONTEXT异常释放比例。</ns1:Description>
+		<ns1:Usage>无线掉线率反映了系统的业务通讯保持能力，也反映了系统的稳定性和可靠性。
+
+</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>∑(CONTEXT.AttRelEnb-CONTEXT.AttRelEnb.Normal)/∑(CONTEXT.SuccInitalSetup+CONTEXT.NbrLeft)</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EUTRAN网络运行管理指标(V2.5.0).xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-U</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>用户业务</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>LTE业务活跃用户数</ns1:Name_CN>
+		<ns1:Unit>个</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>在预先设定的测量周期内，统计每一个进行了LTE数据业务的用户的数量，注意需要对用户通过IMSI进行去重统计</ns1:Description>
+		<ns1:Usage>反映一定时间内使用了LTE数据业务的用户的数量</ns1:Usage>
+		<ns1:Data_Sources>S1-U接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SUB.ActSubs</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>IMS网络PDN连接建立</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>IMS网络PDN连接建立成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>IMS网络PDN连接成功次数 /IMS网络PDN连接请求次数</ns1:Description>
+		<ns1:Usage>统计IMS网络PDN连接建立成功率
+</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.PdnConnectivityComplete.Ims/SM.PdnConnectivityRequest.Ims</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE语音专用承载建立</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>VoLTE语音专用承载建立成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>VoLTE语音专用承载建立成功次数 /VoLTE语音专用承载建立请求次数 </ns1:Description>
+		<ns1:Usage>统计VoLTE语音专用承载建立成功率</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.ActDedicatedEpsBearerAccept.QCI1/SM.ActDedicatedEpsBearerRequest.QCI1</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE视频专用承载建立</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>VoLTE视频专用承载建立成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>VoLTE视频专用承载建立成功次数 /VoLTE视频专用承载建立请求次数 </ns1:Description>
+		<ns1:Usage>统计VoLTE视频专用承载建立成功率</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.ActDedicatedEpsBearerAccept.QCI2/SM.ActDedicatedEpsBearerRequest.QCI2</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标中暂无该指标</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE语音专用承载更新</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>VoLTE语音专用承载更新成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>VoLTE语音专用承载更新成功次数 /VoLTE语音专用承载建立更新次数 </ns1:Description>
+		<ns1:Usage>统计VoLTE语音专用承载更新成功率</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.ModEpsBearerAccept.QCI1/SM.ModEpsBearerRequest.QCI1</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标中暂无该指标</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>S1-MME</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE视频专用承载更新</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>VoLTE视频专用承载更新成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>VoLTE视频专用承载更新成功次数 /VoLTE视频专用承载更新请求次数 </ns1:Description>
+		<ns1:Usage>统计VoLTE视频专用承载更新成功率</ns1:Usage>
+		<ns1:Data_Sources>S1-MME接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>SM.ModEpsBearerAccept.QCI2/SM.ModEpsBearerRequest.QCI2</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标中暂无该指标</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权流程</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>应用会话授权成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>应用会话授权成功次数/应用会话授权尝试次数</ns1:Description>
+		<ns1:Usage>统计VoLTE应用会话授权成功率</ns1:Usage>
+		<ns1:Data_Sources>Rx接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>Service.VOLTE.PccAuthorizedSucc/Service.VOLTE.PccAuthorizedReq</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权更新流程</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>应用会话授权更新成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>应用会话授权更新成功次数/应用会话授权更新尝试次数</ns1:Description>
+		<ns1:Usage>统计VoLTE应用会话授权更新成功率</ns1:Usage>
+		<ns1:Data_Sources>Rx接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>Service.VOLTE.PccAuthorizeUpdatedSucc/Service.VOLTE.PccAuthorizeUpdatedReq</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话授权终止流程</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>应用会话授权终止成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>应用会话授权终止成功次数/应用会话授权终止尝试次数</ns1:Description>
+		<ns1:Usage>统计VoLTE应用会话授权终止成功率</ns1:Usage>
+		<ns1:Data_Sources>Rx接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>Service.VOLTE.PccAuthorizeEndedSucc/Service.VOLTE.PccAuthorizeEndedReq</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话异常终止流程</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>应用会话异常终止成功率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>应用会话异常终止成功次数/应用会话异常终止尝试次数</ns1:Description>
+		<ns1:Usage>统计VoLTE应用会话异常终止成功率</ns1:Usage>
+		<ns1:Data_Sources>Rx接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>Service.VOLTE.PccAbortedSucc/Service.VOLTE.PccAbortedReq</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+	<ns1:KPI ns1:author="orgin">
+		<ns1:Interface>Rx</ns1:Interface>
+		<ns1:Code/>
+		<ns1:Procedure>VoLTE应用会话流程</ns1:Procedure>
+		<ns1:Name_EN/>
+		<ns1:Name_CN>应用会话呼损率</ns1:Name_CN>
+		<ns1:Unit>%</ns1:Unit>
+		<ns1:Space_Dim>小区</ns1:Space_Dim>
+		<ns1:Time_Dim>15分钟</ns1:Time_Dim>
+		<ns1:Description>1-(应用会话授权成功次数+应用会话授权更新成功次数)/( 应用会话授权尝试次数+应用会话授权更新尝试次数)</ns1:Description>
+		<ns1:Usage>统计VoLTE应用会话呼损率</ns1:Usage>
+		<ns1:Data_Sources>Rx接口测量项</ns1:Data_Sources>
+		<ns1:Algorithm>1-(Service.VOLTE.PccAuthorizedSucc+Service.VOLTE.PccAuthorizeUpdatedSucc)/(Service.VOLTE.PccAuthorizedReq+Service.VOLTE.PccAuthorizeUpdatedReq)</ns1:Algorithm>
+		<ns1:Specifications>中国移动统一DPI设备技术规范-LTE信令采集解析服务器接口规范v2.0.9.docx
+EPC网络运行管理指标（V2.0.0）.xlsx</ns1:Specifications>
+		<ns1:Comments/>
+	</ns1:KPI>
+</ns1:Table_KPIs>
