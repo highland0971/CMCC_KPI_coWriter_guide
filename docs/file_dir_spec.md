@@ -54,5 +54,5 @@
 ```
 
 ## 示例
-请参考本项目**[spec_example](\spec_example)**目录下文件结构。
+请参考本项目 [**spec_example**](\spec_exampl ) 目录下文件结构。
 
