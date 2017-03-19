@@ -23,4 +23,4 @@
 
 4. **查看所关注项目的更新(@Email)**
 
-![Fork & Watch](../imgs/image_watch_fork_3.png)
+![Fork & Watch](../imgs/image_watch_fork_4.png)
