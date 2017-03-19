@@ -62,5 +62,6 @@
     关于基于Git及Github的文章进行协作开发的文章很多，按照难易度，建议按照如下顺序进行阅读
 - [Git与Repo入门](http://www.cnblogs.com/angeldevil/archive/2013/11/26/3238470.html)  -- 阅读关于版本控制历史的相关介绍即可
 - [git概念 原理 使用](http://blog.csdn.net/chenj_freedom/article/details/50543152) -- 阅读Git工作原理和基本概念
+- [Understanding the GitHub Flow](https://guides.github.com/introduction/flow/)  -- GitHub官方工作流简介文档
 - [使用Git和Github进行协同开发流程](https://segmentfault.com/a/1190000002413519)  -- 基于Github的协作工作流程，对本文是一个更为详尽的说明
 - [Pro Git book](https://git-scm.com/book/zh/v2)    -- 全面学习Git相关知识
