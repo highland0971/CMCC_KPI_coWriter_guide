@@ -1,4 +1,4 @@
-# 目录命名及文件命名规范(示例Readme.md文件)
+# *示例README.md文件*
 
 由于基于XML、XSD及Markdown * ( \*.md) * 规范的指标编写文档关系较为松散，且存在文档间相互依赖关系，规范的文件命名规则及目录组织关系可极大提高后续指标规范文档的维护和发布。中国移动指标工作组成员及第三方参与者，需严格遵循本规范约定的文件及目录组织形式。
 
@@ -54,5 +54,6 @@
 ```
 
 ## 示例
-请参考本项目**[spec_example](\spec_example)**目录下文件结构。
-**就是您现在所在目录！**
+请参考本项目 [ **spec_example** ](https://github.com/highland0971/CMCC_KPI_coWriter_guide/tree/master/spec_example ) 目录下文件结构。
+
+**您已在此**
