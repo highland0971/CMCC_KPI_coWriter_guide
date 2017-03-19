@@ -177,3 +177,13 @@ elementFormDefault="qualified">
      ![右键导出](../imgs/image_xml_export_1.png)
 
      ![覆盖原XML文件](../imgs/image_xml_export_2.png)
+
+
+
+## 关于XML及XSD规范的参考资料
+
+[如何在Excel中加载XML文件](https://support.office.com/zh-cn/article/%E5%B0%86-XML-%E5%85%83%E7%B4%A0%E6%98%A0%E5%B0%84%E5%88%B0-XML-%E6%98%A0%E5%B0%84%E4%B8%AD%E7%9A%84%E5%8D%95%E5%85%83%E6%A0%BC-ddb23edf-f5c5-4fbf-b736-b3bf977a0c53)
+
+[XML Schema (XSD) 教程 ](http://www.w3school.com.cn/schema/index.asp)
+
+[XML  教程 ](http://www.w3school.com.cn/xml/index.asp)
