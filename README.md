@@ -7,7 +7,7 @@
 **新方案，新指标，新流程**
 
 
-## 目录 ##
+## 指导书目录 ##
 
 1. 基本在线协作流程
    1. [基于Github的基本角色和协作流程](/docs/base_workflow.md)
@@ -17,8 +17,8 @@
    5. 主项目评审及合并
    6. [关注并参与讨论](/docs/watch_and_discuss.md)
 2. [基于Markdown的文档规范编写简介](/docs/Markdown_writing.md)
-3. [基于XML/XSD的表格规范编写简介](docs/xml_datagrid_writing.md)
-4. 指标工作组目录及文件规范
+3. [基于XML/XSD的表格规范编写简介](/docs/xml_datagrid_writing.md)
+4. [目录命名及文件规范](/docs/file_dir_spec.md)
 5. 工具及手段
     1. Git && GitTortoise
     2. Typora
