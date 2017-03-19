@@ -1,4 +1,4 @@
-# 关注并参与讨论
+﻿# 关注并参与讨论
 
 在基于**Github**的项目协作中，任何一个参与方都可以全程参与到协作内容的审阅及问题讨论环节。通过在Github中关注所参与的项目(任一指标规范修订项目)，便可看到项目中所发生的一切环节：
 * 版本更新、发布
@@ -23,4 +23,8 @@
 
 4. **查看所关注项目的更新(@Email)**
 
+* 15802221580 从Fork的子项目中发起Pull Request请求给主仓库@highland0971 *
 ![Fork & Watch](../imgs/image_watch_fork_4.png)
+
+* 由于15802221580账户关注了主仓库@highland0971，主仓库@highland0971收到Pull Request会被推送到15802221580账户的注册邮箱中 *
+![Fork & Watch](../imgs/image_watch_fork_5.png)
