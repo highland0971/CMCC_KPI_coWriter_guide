@@ -79,7 +79,7 @@
 ![PR已被处理](../imgs/image_joyhighland_repo_first_pr_review_maintainer_4.png)
 ![原主仓库更新](../imgs/image_joyhighland_repo_first_pr_review_maintainer_5.png)
 
-## 8. B省用户同步最新规范
+## 8. B省用户同步最新规范(账号15802221580)
 
 ![发现主仓库更新](../imgs/image_joyhighland_repo_first_pr_sync_3rdparty_1.png)
 ![发起同步请求PR](../imgs/image_joyhighland_repo_first_pr_sync_3rdparty_2.png)
@@ -87,3 +87,4 @@
 ![合并同步请求](../imgs/image_joyhighland_repo_first_pr_sync_3rdparty_4.png)
 ![PR已被Merge](../imgs/image_joyhighland_repo_first_pr_sync_3rdparty_5.png)
 ![检查B省Fork仓库状态](../imgs/image_joyhighland_repo_first_pr_sync_3rdparty_6.png)
+![将更新同步到本地仓库](../imgs/image_joyhighland_repo_first_pr_sync_3rdparty_7.png)
