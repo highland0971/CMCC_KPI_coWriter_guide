@@ -15,7 +15,8 @@
    3. 主项目复制及本地仓库创建
    4. 本地仓库修订提交及合并请求
    5. 主项目评审及合并
-   6. [关注并参与讨论](/docs/watch_and_discuss.md)
+   6. [关注项目并参与讨论](/docs/watch_and_discuss.md)
+   7. [一个完整的示例](/docs/demonstration.md)
 2. [基于Markdown的文档规范编写简介](/docs/Markdown_writing.md)
 3. [基于XML/XSD的表格规范编写简介](/docs/xml_datagrid_writing.md)
 4. [目录命名及文件规范](/docs/file_dir_spec.md)
